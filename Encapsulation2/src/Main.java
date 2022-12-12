@@ -7,17 +7,17 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Put here your age!");
-        person.age = scanner.nextInt();
+        person.setAge(scanner.nextInt());
 
         System.out.println("Your name?");
-        person.name =  scanner.nextLine();
+        person.setName(scanner.next());
 
         System.out.println("What about your surname?");
-        person.surname = scanner.nextLine();
+        person.setSurname(scanner.next());
 
         System.out.println("How tall are you?");
-        person.height = scanner.nextDouble();
+        person.setHeight(scanner.nextDouble());
 
-        System.out.printf("%s, %s, %d, %.2f", person.getName(), person.getSurname(), person.getAge(), person.getHeight());
+        System.out.printf("%d, %s, %s, %,.2f", person.getAge(), person.getName(), person.getSurname(), person.getHeight());
     }
 }
